@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font: 105%/1.4 Helvetica, Arial, sans-serif;
+    background-color: rgb(126, 125, 125);
+    
+}
+
+header {
+    text-align:left;
+    line-height: 95px;  
+ 
+}
+nav {
+    height: 95px;
+    background-color: rgb(165, 165, 165);
+    color: rgb(126, 125, 125);
+    
+}
+
+.circle {
+    float: left; 
+    width: 90px;
+    height: 90px;
+    margin-left: 370px;
+    margin-right: 12px;
+    margin-top:6px;
+    position: relative;
+    /*shape-outside: square();  Establece la forma exterior del círculo como un cuadrado */
+    clip-path: circle(); /* Define el círculo mediante la propiedad clip-path */
+    background: rgb(255, 43, 43);
+
+    align-items: center;          /* Centra verticalmente los elementos hijos dentro del círculo */
+    
+}
+
+.text {
+    font-family: 'Caveat', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Peso del texto (si es necesario) */
+    position: absolute;
+    left: 17px;
+    top: 14px;
+    
+    line-height: 1.2em; /* Centrar verticalmente el texto ---------------------------------------*/
+    
+}
+
+/* Outline elements to help with styling (NAV, UL, LI, and A) */
+nav ul {
+    list-style-type: none;/* Turn off list markers */
+    padding: 0;
+    margin:0;
+    background-color: rgb(255, 255, 255);
+    
+}
+nav li {
+    display:inline-block;  /*Arrange the list items horizontally */
+    position: relative;/* Set position of 1st-level LI to relative so 2nd-level ULs can be placed with respect to their parent LI */
+    margin-left:7px;
+    
+}
+
+nav li ul {
+    position: absolute;/* Set position of 2nd-level lists to 'absolute' */
+    left:-9999px;/*  Hide the 2nd-level lists*/
+    width: 15em;/*  Set a consistent width on the 2nd-level UL */ 
+}
+
+/* Arrange the 2nd-level list items vertically again */
+nav li li {
+    display:block;/*make columns with the elements*/
+    height: 3em; /* dropdown menu elements height---------------------------------*/
+    line-height: 2em; /* Centrar verticalmente el texto -center vertically--------------------------------------*/
+}
+nav li a {
+    display: block;/*Set anchors to function as full-width clickable bars with display: block */
+    text-decoration: none; /* Quitar subrayado */
+    color: rgb(131, 131, 131);  /* Color of words in the menu */
+    padding: 0.25em;
+    transition: color 0.3s;  /* changing the color of the text ---------------------------------------*/
+}
+
+/* Show the 2nd-level list (UL) when the parent LI is moused over */
+nav li:hover ul{
+    left:auto
+}
+
+
+/* Style the hyperlinks using pseudoclasses - :link, :visited, :focus, :hover, :active */
+nav li:link{
+    text-decoration: none;
+    color: white;
+    padding: 0.25em;
+}
+nav li a:visited{
+    color:rgb(255, 68, 47);
+}
+nav li:focus{
+    background-color: bisque;
+    outline: 0;
+}
+nav li a:hover{  /* to apply text color transition add 'a'*/
+    background-color: rgb(108, 108, 108);
+    color:white; 
+    
+}
+nav li:active{
+    background-color: rgb(255, 0, 0);
+   
+}
+h3{
+    color: white;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 15px;
+}
+
+.img-typewriter {
+    display: flex;
+    margin-top: 60px;
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column;
+    
+}
+
+img {
+    max-width: 35%;
+    max-height: 35%;
+    border-radius: 15px;
+}

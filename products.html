@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-menu.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="sidebar">
+        <div id="box1">
+            <a href="#" onclick="closeSidebar()">Back</a>
+            <div id="selectedItem">In your Cart: </div>
+            <div >Total:$0</div>
+        </div>
+    </div>
+    <header>
+        <li class="circle">  
+            <div class="text"><a href="index.html"><p>Typing Dreams</p></a></div>
+        </li>
+        <li>
+            <h2>Products</h2>
+        </li>
+    </header>
+    <div>
+        <h1><strong>Gallery</strong></h1>
+    </div>
+    <section class="gallery">
+        <figure  >
+            <img src="Blickensderfer.jpg" alt="Blickensderfer">
+            <figcaption>
+                <p><strong>Blickensderfer: </strong>Introduced in the late 19th century, this typewriter was notable for its compact design and cylindrical keyboard.</p>
+            </figcaption>
+            <button onclick="openSidebar()">Add to Cart</button>
+        </figure>
+        <figure>  
+            <img src="Remmington-No1.png" alt="Remmington-No1">
+            <figcaption>
+                <p><strong>Remington No. 1: </strong> It was the first commercially successful typewriter. Developed by Christopher Latham Sholes, Samuel Soule, and Carlos Glidden, it was produced by E. Remington and Sons in 1874.</p>
+            </figcaption>
+            <button onclick="openSidebar()">Add to Cart</button>
+        </figure>
+        <figure>
+            <img src="Underwood.png" alt="Underwood">
+            <figcaption>
+                <p><strong>Underwood: </strong>Introduced in the early 20th century, the Underwood became one of the most popular and widely used typewriters. It was renowned for its robust design and durable mechanism.</p>
+            </figcaption>
+            <button onclick="openSidebar()">Add to Cart</button>
+        </figure>
+        <figure>  
+            <img src="IBM-Selectric.jpg" alt="IBM-Selectric">
+            <figcaption>
+                <p><strong>IBM Selectric</strong>Launched in 1961, the Selectric was a significant innovation featuring a spherical typeball design instead of individual typebars. This allowed for faster and easier font changes.</p>
+            </figcaption>
+            <button onclick="openSidebar()">Add to Cart</button>
+        </figure>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

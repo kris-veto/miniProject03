@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-menu.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <li class="circle">  
+            <div class="text"><a href="index.html"><p>Typing Dreams</p></a></div>
+        </li>
+        <li>
+            <h2>Comments Box</h2>
+        </li>
+    </header>
+
+    <section class="box">
+        <form id="user_info" action="process-form.html" method="post">
+            <fieldset>
+                <legend>User information</legend>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" required size="20" maxlength="50" placeholder="Fisrt Name"/>
+                    
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" required size="20" maxlength="50" placeholder="Last Name"/> 
+                    
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="comment">Share your comment</label>
+                    <textarea id="comment" name="comment" rows="5" cols="50"></textarea> 
+                </div>
+            </fieldset>
+                <div>
+                    <button type="reset">Clear form</button><button type="submit">Submit</button>
+                </div>
+        </form>
+    </section>
+</html>

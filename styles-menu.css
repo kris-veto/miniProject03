@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: rgb(126, 125, 125);
+    
+}
+#sidebar{
+    height:100%;
+    width:0;
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: rgb(35, 39, 98);
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 0px;
+    margin: 0;
+}
+#sidebar a{
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+#selectedItem{
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#box1{
+    height: 300px;
+    width: 155px;
+    background-color: rgb(127, 157, 255);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+header {
+    background-color: white;
+    list-style-type: none;
+    height: 103px;
+    padding: 0;
+    margin:0;
+    line-height:100px;
+    color: rgb(126, 125, 125);
+}
+
+.circle {
+    float: left; 
+    width: 90px;
+    height: 90px;
+    margin-left: 370px;
+    margin-right: 12px;
+    margin-top:6px;
+    position: relative;
+    /*shape-outside: square();  Establece la forma exterior del círculo como un cuadrado */
+    clip-path: circle(); /* Define el círculo mediante la propiedad clip-path */
+    background: rgb(255, 43, 43);
+
+    align-items: center;          /* Centra verticalmente los elementos hijos dentro del círculo */
+    
+}
+
+.text {
+    
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 26px; /* Tamaño del texto */
+    font-weight: bold; /* Peso del texto (si es necesario) */
+    position: absolute;
+    left: 3px;
+    /* top: 7px; */
+    line-height: 1.1em;  /*Centrar verticalmente el texto ---------------------------------------*/
+    
+}
+.text a {
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    color: inherit; /* Heredar el color del texto del elemento padre (.text) */
+}
+
+.box {
+    padding: 20px;
+    background-color: white;
+    width:35%;
+    height: 40%;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 15px;
+    
+}
+div {
+    font-size: 15px;
+    padding: 0.5em;
+}
+
+fieldset {
+    margin: 15px;
+}
+
+h1{
+    color: white;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 20px;
+    margin-left:46%;
+
+}
+
+.gallery {
+    
+    margin: 0 auto;
+    display: flex;
+    height: 700px;
+    width: 55%;
+    /*align-items: center;  Centra verticalmente */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+img {
+    max-width: 280px;
+    max-height: 280px;
+    border-radius: 15px;
+}
+p {
+    max-width: 280px;
+    color:white;
+    font-size: 90%;
+}
+
+figure {
+    margin: 5px;
+}
+button{
+    font-size: 16px;
+    cursor: pointer;
+    border:none;
+    color:beige;
+    background-color: rgb(35, 39, 98);
+    padding: 7px 15px;
+    border-radius: 8px;
+}
